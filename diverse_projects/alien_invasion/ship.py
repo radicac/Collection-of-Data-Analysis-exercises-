@@ -6,6 +6,7 @@ class Ship:
         self.screen_rect = ai_game.screen.get_rect()
 
         self.image = pygame.image.load('images/ship.bmp')
+        self.image.set_colorkey((255, 255, 255))
         self.rect = self.image.get_rect()
         self.rect.midbottom = self.screen_rect.midbottom
         self.moving_right = False

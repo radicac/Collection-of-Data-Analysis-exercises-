@@ -9,6 +9,7 @@ class Star(Sprite):
         self.screen_rect = ai_game.screen.get_rect()
 
         self.image = pygame.image.load('images/star.bmp')
+        self.image.set_colorkey((255, 255, 255))
         self.rect = self.image.get_rect()
 
         self.rect.x = self.rect.width
